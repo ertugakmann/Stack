@@ -14,6 +14,11 @@
             stack.PrintAll();
             stack.PrintTop();
             stack.PrintCount();
+            Console.WriteLine("**********************");
+            stack.Pop();
+            stack.PrintAll();
+            stack.PrintTop();
+
         }
     }
 }

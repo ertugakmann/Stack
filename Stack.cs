@@ -61,5 +61,27 @@ namespace Stack
         {
             Console.WriteLine("The count of Stack : " + count);
         }
+
+        public Node Pop()
+        {
+            if (count == 0)
+            {
+                return null;
+            }else 
+            {
+                Node temp = top;
+
+                top = top.next;
+                temp.next = null;
+                count--;
+
+                return temp;
+            }       
+        }
+
+        public bool isEmpty()
+        {
+            return count == 0;
+        }
     }
 }
