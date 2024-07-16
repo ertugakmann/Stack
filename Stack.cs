@@ -40,5 +40,26 @@ namespace Stack
             }
             count++;
         }
+
+        public void PrintAll()
+        {
+            Node temp = top;
+
+            while(temp != null)
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
+        }
+
+        public void PrintTop()
+        {
+            Console.WriteLine("The top of Stack : " + top.data);
+        }
+
+        public void PrintCount()
+        {
+            Console.WriteLine("The count of Stack : " + count);
+        }
     }
 }

@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Stack stack = new Stack(12);
+
+            stack.Push(5);
+            stack.Push(7);
+            stack.Push(2);
+            stack.Push(9);
+
+            stack.PrintAll();
+            stack.PrintTop();
+            stack.PrintCount();
         }
     }
 }
